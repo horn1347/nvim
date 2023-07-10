@@ -1,11 +1,11 @@
 local mason_status, mason = pcall(require, "mason")
-if not maston_status then
+if not mason_status then
   print("Mason not loaded")
   return
 end
 
 local mason_lspconfig_status, mason_lspconfig = pcall(require, "mason-lspconfig")
-if not maston_lspconfig_status then
+if not mason_lspconfig_status then
   print("Mason_lsp_config not loaded")
   return
 end
@@ -22,7 +22,6 @@ mason_lspconfig.setup({
     "cssls",
     "dockerls",
     "docker_compose_language_service",
-    "golangci_lint_ls",
     "html",
     "jsonls",
     "jdtls",

@@ -65,6 +65,9 @@ return require('packer').startup(function(use)
   use {"williamboman/mason.nvim"} --LSP Manager
   use {"williamboman/mason.lspconfig.nvim"}
   use {"neovim/nvim-lspconfig"}
+  use {'glepnir/lspsaga.nvim', branch = 'main'}
+  use {'jose-elias-alvarez/typescript.nvim'}
+  use {'onsails/lspkind.nvim'}
 
 
 
