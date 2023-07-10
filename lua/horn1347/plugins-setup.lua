@@ -69,6 +69,20 @@ return require('packer').startup(function(use)
   use {'jose-elias-alvarez/typescript.nvim'}
   use {'onsails/lspkind.nvim'}
 
+  --treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+      require("nvim-treesitter.install").update({
+        whith_sync = true
+      })
+    end
+  }
+
+  --auto close
+  use {"windwp/nvim-autopairs"}
+  use {"windwp/nvim-ts-autotag"}
+
 
 
   -- Automatically set up your configuration after cloning packer.nvim

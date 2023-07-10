@@ -10,5 +10,3 @@ require("horn1347.plugins.nvim-cmp")
 require("horn1347.plugins.lsp.mason")
 require("horn1347.plugins.lsp.lspconfig")
 require("horn1347.plugins.lsp.lspsaga")
-
-

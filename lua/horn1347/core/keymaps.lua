@@ -3,7 +3,6 @@ vim.g.mapleader = " "
 local map = vim.keymap
 
 --general
-map.set("i", "jk", "<ESC>")
 map.set("n", "<leader>nh", ":nohl<CR>");
 map.set("n", "x", '"x')
 
@@ -39,3 +38,4 @@ map.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>")
 map.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
 map.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
 map.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
+
